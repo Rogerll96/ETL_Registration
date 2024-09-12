@@ -1,1 +1,1 @@
-This repository was created for the development of a Python application to optimize the registration process using ETL resources to handle large volumes of data.
+This repository was created for the development of a Python application to optimize the registration process using ETL resources to handle large volumes of data. Sensitive data has been removed for the purpose of sharing the code and using it in extension projects.
