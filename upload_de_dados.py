@@ -14,7 +14,7 @@ def extrair_dados(arquivo_excel):
 
 # Função para validar o formato das colunas
 def validar_formato(dados):
-    colunas_esperadas = ['filial', 'codigo_cliente', 'codigo_representante_comercial']
+    colunas_esperadas = ['ESTAB', 'PESSOADOC', 'IDREPRESENTANTE']
     
     # Verifica se as colunas estão corretas
     if list(dados.columns) == colunas_esperadas:
@@ -62,7 +62,7 @@ def processo_etl(arquivo_excel, tabela_bd, conexao_bd):
         print("O processo ETL foi interrompido devido a erro na extração dos dados.")
 
 # Definir o caminho do arquivo Excel e os detalhes do banco de dados
-arquivo_excel = 'caminhoDaPasta/dados.xlsx'  # Caminho do arquivo Excel, informações sensíveis removidas devido ao LGPD da empresa Querodiesel conforme o ano de 2024
+arquivo_excel = 'caminhoDaPasta.xlsx'  # Caminho do arquivo Excel, informações sensíveis removidas devido ao LGPD da empresa Querodiesel conforme o ano de 2024
 tabela_bd = 'tabela_dados'    # Nome da tabela no banco de dados, informações sensíveis removidas devido ao LGPD da empresa Querodiesel conforme o ano de 2024
 conexao_bd = 'sqlite:///meu_banco.db'  # Conexão para um banco de dado, informações sensíveis removidas devido ao LGPD da empresa Querodiesel conforme o ano de 2024
 
